@@ -1,0 +1,9 @@
+project: gpac
+target: fuzz_parse
+testsuite: # mayhem-lint: keep-testsuite — fuzz_parse is an ISOBMFF/MP4 parser; without valid MP4 seeds it rejects input at the header-check and covers very few edges.
+  - file:///mayhem/mayhem/fuzz_parse_corpus
+cmds:
+  - cmd: /mayhem/fuzz_parse
+    libfuzzer: true
+    cwd: /dev/shm
+    dictionary: /mayhem/mayhem/fuzz_parse.dict

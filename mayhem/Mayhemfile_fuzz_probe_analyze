@@ -1,0 +1,6 @@
+project: gpac
+target: fuzz_probe_analyze
+cmds:
+  - cmd: /mayhem/fuzz_probe_analyze
+    libfuzzer: true
+    cwd: /dev/shm
