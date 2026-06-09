@@ -1,0 +1,5 @@
+project: gpac
+target: fuzz_route
+cmds:
+  - cmd: /mayhem/fuzz_route
+    libfuzzer: true

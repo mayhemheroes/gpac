@@ -1,0 +1,5 @@
+project: gpac
+target: fuzz_m2ts_probe
+cmds:
+  - cmd: /mayhem/fuzz_m2ts_probe
+    libfuzzer: true

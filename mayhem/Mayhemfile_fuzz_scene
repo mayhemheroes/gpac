@@ -1,0 +1,5 @@
+project: gpac
+target: fuzz_scene
+cmds:
+  - cmd: /mayhem/fuzz_scene
+    libfuzzer: true

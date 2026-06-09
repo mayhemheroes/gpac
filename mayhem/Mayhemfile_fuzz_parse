@@ -1,0 +1,8 @@
+project: gpac
+target: fuzz_parse
+testsuite:
+  - file:///mayhem/mayhem/fuzz_parse_corpus
+cmds:
+  - cmd: /mayhem/fuzz_parse
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_parse.dict
